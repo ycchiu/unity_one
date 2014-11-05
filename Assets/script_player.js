@@ -4,7 +4,10 @@
 
 //Inspector Variables
 var speed: float = 8.0;
-var rotationSpeed : float = 100.0;
+var vert_max : float = 0.0;
+var vert_min : float = -0.0;
+var horz_max : float = 0.0;
+var horz_min : float = -0.0;
 //Private Variables
 
 function Start () {
@@ -18,18 +21,6 @@ function Update ()
 	var transH : float = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 	
 	transform.Translate (transH, transV, 0);
-	
-	if (transform.position.x > 2 )
-		transform.position.x = 2;
-	
-	if (transform.position.x < -2)
-		transform.position.x = -2;
-	
-	
-	if (transform.position.y > 2 )
-		transform.position.y = 2;
-	
-	if (transform.position.y < -2)
-		transform.position.y = -2;
-	
+	transform.position.x = Mathf.Clamp(transform.position.x, horz_min, horz_max);
+	transform.position.y = Mathf.Clamp(transform.position.y, vert_min, vert_max);
 }
