@@ -1,4 +1,5 @@
-﻿//*************************
+﻿#pragma strict
+//*************************
 //*     Player Script     *
 //*************************
 
@@ -10,6 +11,7 @@ var horz_max : float = 0.0;
 var horz_min : float = -0.0;
 
 var projectTile : Transform;
+var socketProjectTile : Transform;
 
 //Private Variables
 
@@ -29,6 +31,6 @@ function Update ()
 	
 	if (Input.GetKeyDown("space"))
 	{
-		Instantiate. (projectTile, )
+		Instantiate (projectTile, socketProjectTile.position, socketProjectTile.rotation);
 	}
 }
