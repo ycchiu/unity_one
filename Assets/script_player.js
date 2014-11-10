@@ -4,6 +4,7 @@
 //*************************
 
 //Inspector Variables
+public var lives : int = 3;
 var speed: float = 8.0;
 var vert_max : float = 0.0;
 var vert_min : float = -0.0;
