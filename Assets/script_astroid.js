@@ -22,9 +22,10 @@ function Update ()
 function OnTriggerEnter (other : Collider )
 {
 	if( other.gameObject.tag == "Player") {
-		//other.GetComponent("script_player").lives -= 1;
-		if( other.GetComponent("script_player") != null ) {
-			print (other.GetComponent("script_player").lives);
+		
+		if( other.GetComponent(script_player) != null ) {
+			other.GetComponent(script_player).lives -= 1;
+//			print (other.GetComponent( script_player ).lives);
 		}
 	}
 }
