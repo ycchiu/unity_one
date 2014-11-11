@@ -26,6 +26,8 @@ function OnTriggerEnter (other : Collider )
 	if( other.gameObject.tag == "Player") {
 		
 		other.GetComponent(script_player).lives -= 1;
+		
+		//tell sceneManager that player lose one life
 		sceneManager.transform.GetComponent(script_sceneManager).SubstractLife();
 		
 		if( explosion ) {
