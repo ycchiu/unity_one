@@ -2,6 +2,7 @@
 
 var bulletSpeed	: float = 15.0;
 var heightLimit : float = 9.0;
+
 var explosion	: Transform;
 var sceneManager : GameObject;
 

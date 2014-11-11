@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 //Inspector Variables
-var gameTime : float = 0.0;
+var gameTime : float = 60;
 static var score : int = 0;
 static var lives : int = 3;
 var labelRight : float = 100;
@@ -10,14 +10,16 @@ var labelRight : float = 100;
 //Private Variabls
 
 
-function Start () {
-
+function Start () 
+{
+	InvokeRepeating ("CountDown", 1.0, 1.0);
 }
 
 function Update () 
 {
 	print("Player Score: " + score + " Player lives: " + lives);
 }
+
 
 function AddScore()
 {
@@ -28,6 +30,14 @@ function SubstractLife()
 {
 	lives -= 1;
 }
+
+function CountDown()
+{
+	if (--gameTime == 0) {
+		CancelInvoke ("CountDown");
+	}
+}
+
 
 function OnGUI()
 {
