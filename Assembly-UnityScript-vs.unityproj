@@ -49,8 +49,13 @@
      <Compile Include="Assets\script_astroid.js" />
      <Compile Include="Assets\script_block.js" />
      <Compile Include="Assets\script_bullet.js" />
+     <Compile Include="Assets\script_credit.js" />
+     <Compile Include="Assets\script_load.js" />
+     <Compile Include="Assets\script_lost.js" />
+     <Compile Include="Assets\script_menu.js" />
      <Compile Include="Assets\script_player.js" />
      <Compile Include="Assets\script_sceneManager.js" />
+     <Compile Include="Assets\script_win.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/ychiu/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
