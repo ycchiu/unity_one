@@ -11,11 +11,15 @@ var vert_max : float = 0.0;
 var vert_min : float = -0.0;
 var horz_max : float = 0.0;
 var horz_min : float = -0.0;
+var numberOfShields	: int = 3;
+var shieldKeyInput : KeyCode;
 
 var projectTile : Transform;
 var socketProjectTile : Transform;
+var shieldMesh : Transform;
 
 //Private Variables
+
 
 function Start () {
 
@@ -34,5 +38,12 @@ function Update ()
 	if (Input.GetKeyDown("space"))
 	{
 		Instantiate (projectTile, socketProjectTile.position, socketProjectTile.rotation);
+	}
+	
+	//create shield
+	if ( Input.GetKeyDown(shieldKeyInput) )
+	{
+		Instantiate (shieldMesh, transform.position, transform.rotation);
+		shieldMesh.transform.parent = transform;
 	}
 }

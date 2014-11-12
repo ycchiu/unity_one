@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 //Inspector Variables
-var gameTime : float = 60;
+var gameTime : float = 10;
 static var score : int = 0;
 static var lives : int = 3;
 var labelRight : float = 100;
@@ -17,7 +17,19 @@ function Start ()
 
 function Update () 
 {
-	print("Player Score: " + score + " Player lives: " + lives);
+	if (lives <= 0 ) {
+		Application.LoadLevel ("scene_lost");
+		PlayerPrefs.SetInt("score", score);
+		lives = 3;
+		score = 0;
+	}
+	
+	 if (gameTime <= 0 ) {
+		Application.LoadLevel ("scene_win");
+		PlayerPrefs.SetInt ("score", score);
+		lives = 3;
+		score = 0;
+	}
 }
 
 

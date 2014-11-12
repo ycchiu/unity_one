@@ -18,7 +18,7 @@ function OnGUI ()
 	
 	GUI.Box (Rect(0, 0, 200, 200), "You Lose");
 	
-	GUI.Label (Rect(10, 30, 100, 50), "Your Score : ");
+	GUI.Label (Rect(10, 30, 100, 50), "Your Score : "+ PlayerPrefs.GetInt("score"));
 	
 	if (GUI.Button(Rect(60, 60, 80, 30), "Main Menu") ) {
 		Application.LoadLevel ("scene_menu");

@@ -55,6 +55,7 @@
      <Compile Include="Assets\script_menu.js" />
      <Compile Include="Assets\script_player.js" />
      <Compile Include="Assets\script_sceneManager.js" />
+     <Compile Include="Assets\script_shield.js" />
      <Compile Include="Assets\script_win.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">

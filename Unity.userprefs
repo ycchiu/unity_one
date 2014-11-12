@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script_sceneManager.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script_player.js">
     <Files>
-      <File FileName="Assets/script_bullet.js" Line="6" Column="1" />
-      <File FileName="Assets/script_player.js" Line="22" Column="2" />
-      <File FileName="Assets/script_sceneManager.js" Line="37" Column="30" />
-      <File FileName="Assets/script_astroid.js" Line="30" Column="48" />
+      <File FileName="Assets/script_sceneManager.js" Line="22" Column="38" />
+      <File FileName="Assets/script_win.js" Line="19" Column="79" />
+      <File FileName="Assets/script_lost.js" Line="21" Column="80" />
+      <File FileName="Assets/script_player.js" Line="45" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
